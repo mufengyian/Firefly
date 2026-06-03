@@ -36,7 +36,7 @@ const postsCollection = defineCollection({
 			path: ["published"],
 		})
 		.transform(({ pubDate, ...data }) => {
-			const published = data.published ?? pubDate;
+			const published = pubDate ?? data.published;
 			if (!published) {
 				throw new Error("Either published or pubDate is required.");
 			}

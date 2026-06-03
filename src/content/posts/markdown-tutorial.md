@@ -1,6 +1,6 @@
 ---
 title: Markdown 教程
-published: 1970-01-01
+pubDate: 1970-01-01
 pinned: false
 description: 一个简明的 Markdown 博客示例。
 tags: [Markdown, 文章示例]
@@ -13,6 +13,15 @@ draft: false
 ---
 
 这是一个展示如何编写 Markdown 文件的示例。本文档汇总了核心语法与常见扩展（GFM）。
+
+> **Frontmatter 提示**：文章顶部的 `---` 区块中，`published` 和 `pubDate` 都可指定发布日期，二选一。如果同时使用，`pubDate` 优先。日期设为未来可实现定时发布。
+>
+> ```yaml
+> ---
+> title: 文章标题
+> pubDate: 2026-06-15  # 到 6 月 15 日才会公开
+> ---
+> ```
 
 - [块级元素](#block-elements)
     - [段落与换行](#paragraphs-and-line-breaks)
